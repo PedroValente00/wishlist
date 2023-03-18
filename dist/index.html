@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&lt;/salt&gt; :: Shopping wish list</title>
+  <link rel="stylesheet" type="text/css" href="./style/wishlist.css">
+  <script defer src="./wishlist.js"></script>
+</head>
+
+<body>
+<main class="main">
+  <section class="section" id="register-section">
+    <form class="form" id="form" action="/" method="post">
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Register new item</legend>
+        <label class="form__label-text" for="title">Title</label>
+        <input class="form__input" type="text" name="title" id="title" required="required" maxlength="100" data-testid="txtCardTitle">
+        <label class="form__label-description" for="description">Description</label>
+        <input class="form__input" type="text" name="description" maxlength="120" id="description">
+        <button class="form__button" id="submit" type="submit" data-testid="btnAddCard">Add</button>
+      </fieldset>
+    </form>
+  </section>
+  <section class="section card__section" id="display-section" data-testid="cardList">
+
+  </section>
+</main>
+</body>
+
+</html>

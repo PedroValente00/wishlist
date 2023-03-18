@@ -1,0 +1,95 @@
+:root {
+  --form: #6a91e6;
+  --list__item--not-completed: #80f478;
+  --list__item--completed: #3a8d34;
+  --border: #4D455D;
+}
+* {
+  box-sizing: border-box;
+}
+.main{
+  margin-top: 2em;
+}
+.section{
+  width: 85%;
+  margin: auto;
+  max-width: 1000px;
+}
+.card__section{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+}
+.form__fieldset{
+  border-radius: 5px;
+  background-color: var(--form);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.form__legend{
+  padding: 0.2em 1em;
+  position: relative;
+  bottom: 0.5em;
+  background-color: var(--form);
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.form__input{
+  outline: 0;
+  border-color: #909090;
+  border-radius: 5px;
+  padding: 0.3em;
+  margin-left: 0.5em;
+}
+.form__button{
+  margin: 1em;
+  align-self: center;
+  padding: 0.4em 2em;
+}
+.card{
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.2em;
+  padding: 0 1em;
+  opacity: 0.9;
+  border-radius: 3px;
+}
+.card__button{
+  padding: 1em;
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  border-radius: 5px;
+  opacity: 0.6;
+}
+.card__button:hover{
+  opacity: 1;
+  color: white;
+  cursor: pointer;
+}
+.card__div-left {
+  pointer-events: none;
+}
+.card:hover{
+opacity: 1;
+cursor: pointer;
+}
+.list__item--not-completed{
+  background-color: var(--list__item--not-completed);
+  order: 1;
+}
+.list__item--completed{
+  background-color: var(--list__item--completed);
+  text-decoration: line-through;
+  order: 2;
+}
+.button--not-done{
+  display: none;
+}
