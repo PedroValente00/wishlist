@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>&lt;/salt&gt; :: Shopping wish list</title>
+  <title>Local Storage Wishlist</title>
   <link rel="stylesheet" type="text/css" href="./style/wishlist.css">
   <script defer src="./wishlist.js"></script>
 </head>
@@ -16,14 +16,14 @@
       <fieldset class="form__fieldset">
         <legend class="form__legend">Register new item</legend>
         <label class="form__label-text" for="title">Title</label>
-        <input class="form__input" type="text" name="title" id="title" required="required" maxlength="100" data-testid="txtCardTitle">
+        <input class="form__input" type="text" name="title" id="title" required="required" maxlength="100">
         <label class="form__label-description" for="description">Description</label>
         <input class="form__input" type="text" name="description" maxlength="120" id="description">
-        <button class="form__button" id="submit" type="submit" data-testid="btnAddCard">Add</button>
+        <button class="form__button" id="submit" type="submit">Add</button>
       </fieldset>
     </form>
   </section>
-  <section class="section card__section" id="display-section" data-testid="cardList">
+  <section class="section card__section" id="display-section">
 
   </section>
 </main>
